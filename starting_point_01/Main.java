@@ -16,6 +16,10 @@ class Main {
         byte num1 = (byte) 160;
 
         System.out.println(interest);
+        System.err.println(grade);
+        System.out.println(isPass);
+        System.out.println(name);
+        System.out.println(num1);
 
         // Wrapper types: have method .floatValue()
         Integer loanTerm = 36;
