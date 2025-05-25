@@ -1,4 +1,4 @@
-package Health;
+package health;
 
 public interface Health {
     public double calculateTotalOt();

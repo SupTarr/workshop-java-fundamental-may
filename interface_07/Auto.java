@@ -1,4 +1,4 @@
-package part07;
+package interface_07;
 
 public class Auto implements Loan {
     // Constructor with parameters

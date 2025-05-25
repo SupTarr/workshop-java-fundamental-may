@@ -54,6 +54,10 @@ public class Loan {
                 "(Loan) interestRate: " + interestRate;
     }
 
+    public static void announceLoan() {
+        System.out.println("Loan announced");
+    }
+
     public static void main(String[] args) {
         Loan loan = new Loan();
         loan.applicantName = "John Doe";

@@ -1,4 +1,4 @@
-package Health;
+package health;
 
 public class Main {
     public static void main(String[] args) {

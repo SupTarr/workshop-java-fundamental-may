@@ -1,4 +1,4 @@
-package Health;
+package health;
 
 public class Worker {
     private String name;

@@ -1,4 +1,4 @@
-package Health;
+package health;
 
 public class Nurse extends Worker implements Health {
     private String department;

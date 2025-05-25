@@ -12,6 +12,7 @@ class Main {
         boolean isPass = true;
         String name = "John Doe";
 
+        // Explicit type casting
         byte num1 = (byte) 160;
 
         System.out.println(interest);

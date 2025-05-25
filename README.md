@@ -10,7 +10,7 @@ A workshop for learning the fundamentals of Java programming. This repository co
 
 ## How to Run the Exercises
 
-Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `Health` directory contains a separate set of exercises or a mini-project.
+Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `health` directory contains a separate set of exercises or a mini-project.
 
 1. **Navigate to the exercise directory:**
 
@@ -23,7 +23,7 @@ Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `Health`
     Or for exercises with packages:
 
     ```bash
-    cd Health
+    cd health
     ```
 
     Or
@@ -41,9 +41,9 @@ Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `Health`
         javac *.java
         ```
 
-    * If the files are in a package (e.g., `Health`, `07-interface/part07`):
+    * If the files are in a package (e.g., `health`, `07-interface/part07`):
 
-        From within the package directory (e.g., `Health` or `part07`):
+        From within the package directory (e.g., `health` or `part07`):
 
         ```bash
         javac *.java
@@ -64,15 +64,15 @@ Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `Health`
         java Main
         ```
 
-    * If the main class is in a package (e.g., `Health.Main` or `part07.Main`):
-        From the directory *above* the package structure (e.g., from `workshop-java-fundamental-may` if your `Health` package is directly under it, or from `07-interface` if your `part07` package is under it):
+    * If the main class is in a package (e.g., `health.Main` or `interface_07.Main`):
+        From the directory *above* the package structure (e.g., from `workshop-java-fundamental-may` if your `health` package is directly under it, or from `07-interface` if your `part07` package is under it):
 
         ```bash
-        java Health.Main
+        java health.Main
         ```
 
         ```bash
-        java part07.Main
+        java interface_07.Main
         ```
 
 ## Modules / Exercises
@@ -92,12 +92,12 @@ This workshop is divided into the following modules:
     * [`Auto.java`](07-interface/part07/Auto.java)
     * [`Mortgage.java`](07-interface/part07/Mortgage.java)
     * [`Main.java`](07-interface/part07/Main.java)
-* **[Health](Health):** A mini-project demonstrating classes, inheritance, and interfaces in a `Health` package.
-    * [`Worker.java`](Health/Worker.java) (Superclass)
-    * [`Doctor.java`](Health/Doctor.java)
-    * [`Nurse.java`](Health/Nurse.java)
-    * [`Health.java`](Health/Health.java) (Interface)
-    * [`Main.java`](Health/Main.java)
+* **[health](health):** A mini-project demonstrating classes, inheritance, and interfaces in a `health` package.
+    * [`Worker.java`](health/Worker.java) (Superclass)
+    * [`Doctor.java`](health/Doctor.java)
+    * [`Nurse.java`](health/Nurse.java)
+    * [`health.java`](health/Health.java) (Interface)
+    * [`Main.java`](health/Main.java)
 
 ## License
 

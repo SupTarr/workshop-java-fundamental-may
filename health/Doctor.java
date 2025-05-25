@@ -1,4 +1,4 @@
-package Health;
+package health;
 
 public class Doctor extends Worker implements Health {
     private String specialty;
