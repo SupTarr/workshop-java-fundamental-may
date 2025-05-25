@@ -1,7 +1,6 @@
 package dev.suptarr.demo.model;
 
 public class Binary {
-
     private final String input;
 
     public Binary(String input) {
