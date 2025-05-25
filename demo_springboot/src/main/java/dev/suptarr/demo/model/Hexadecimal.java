@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Hexadecimal {
     private static final Map<Character, Integer> HEX_DIGITS = createHexMap();
-    
+
     private static Map<Character, Integer> createHexMap() {
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i <= 9; i++) {
@@ -24,17 +24,13 @@ public class Hexadecimal {
     public static int toDecimal(String input) {
         int sum = 0;
         input = input.toLowerCase();
-        try {
-            for (int i = 0; i < input.length(); i++) {
-                Integer digit = HEX_DIGITS.get(input.charAt(input.length() - 1 - i));
-                if (digit == null) {
-                    return 0;
-                }
-
-                sum += (digit * Math.pow(16, i));
+        for (int i = 0; i < input.length(); i++) {
+            Integer digit = HEX_DIGITS.get(input.charAt(input.length() - 1 - i));
+            if (digit == null) {
+                return 0;
             }
-        } catch (NumberFormatException e) {
-            return 0;
+
+            sum += (digit * Math.pow(16, i));
         }
 
         return sum;
