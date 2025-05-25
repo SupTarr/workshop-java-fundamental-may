@@ -10,7 +10,6 @@ import dev.suptarr.demo.model.Hexadecimal;
 public class HexadecimalController {
     @GetMapping("/hexadecimal/{base16}")
     public int searchNumber(@PathVariable("base16") String base16) {
-        Hexadecimal hexadecimal = new Hexadecimal();
-        return hexadecimal.toDecimal(base16);
+        return Hexadecimal.toDecimal(base16);
     }
 }
