@@ -1,3 +1,5 @@
+package class_06;
+
 public class Mortgage extends Loan {
     // Default constructor
     public Mortgage() {

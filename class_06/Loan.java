@@ -1,8 +1,11 @@
+package class_06;
+
 public class Loan {
     // OOP: Encapsulation -> private
     private String applicantName;
     private double loanAmount;
     private float interestRate;
+    protected static int x = 3;
 
     // OOP: Overloading -> Loan()
     // Default constructor
@@ -49,5 +52,10 @@ public class Loan {
         return "(Loan) applicantName: " + applicantName + "\n" +
                 "(Loan) loanAmount: " + loanAmount + "\n" +
                 "(Loan) interestRate: " + interestRate;
+    }
+
+    public static void main(String[] args) {
+        Loan loan = new Loan();
+        loan.applicantName = "John Doe";
     }
 }

@@ -1,3 +1,5 @@
+package starting_point_01;
+
 class Array {
     public static void main(String[] args) {
         String[] colours = { "Blue", "Green", "Red" };

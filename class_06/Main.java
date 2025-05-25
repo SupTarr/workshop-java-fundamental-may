@@ -1,3 +1,5 @@
+package class_06;
+
 public class Main {
     public static void main(String[] args) {
         Loan loan1 = new Loan();

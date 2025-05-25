@@ -79,14 +79,14 @@ Each numbered directory (e.g., `01-starting-point`, `06-class`) and the `Health`
 
 This workshop is divided into the following modules:
 
-* **[01-starting-point](01-starting-point):** Introduction to Java syntax, primitive types, wrapper types, and arrays.
-    * [`Main.java`](01-starting-point/Main.java)
-    * [`Array.java`](01-starting-point/Array.java)
+* **[01-starting-point](starting_point_014):** Introduction to Java syntax, primitive types, wrapper types, and arrays.
+    * [`Main.java`](starting_point_01/Main.java)
+    * [`Array.java`](starting_point_01/Array.java)
 * **[06-class](06-class):** Understanding classes, objects, constructors, getters, setters, encapsulation, and inheritance.
-    * [`Loan.java`](06-class/Loan.java)
-    * [`Mortgage.java`](06-class/Mortgage.java)
-    * [`Auto.java`](06-class/Auto.java)
-    *   [`Main.java`](06-class/Main.java)
+    * [`Loan.java`](class_06/Loan.java)
+    * [`Mortgage.java`](class_06/Mortgage.java)
+    * [`Auto.java`](class_06/Auto.java)
+    *   [`Main.java`](class_06/Main.java)
 * **[07-interface](07-interface/part07):** Working with interfaces and polymorphism. (Code is in `part07` package)
     * [`Loan.java`](07-interface/part07/Loan.java) (Interface)
     * [`Auto.java`](07-interface/part07/Auto.java)

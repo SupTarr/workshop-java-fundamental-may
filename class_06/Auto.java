@@ -1,3 +1,5 @@
+package class_06;
+
 public class Auto extends Loan {
     // Default constructor
     public Auto() {
@@ -13,5 +15,11 @@ public class Auto extends Loan {
     public String toString() {
         return "(Auto) " + super.toString();
     }
-    
+
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+
+
 }
+
