@@ -9,7 +9,7 @@ public class Main {
         // Solution1: for loop
         for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i) % 3 == 0 && numbers.get(i) % 5 == 0) {
-                System.out.println("fizz_buzz_00");
+                System.out.println("FizzBuzz");
             } else if (numbers.get(i) % 3 == 0) {
                 System.out.println("Fizz");
             } else if (numbers.get(i) % 5 == 0) {
