@@ -30,7 +30,7 @@ public class LoanController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/persons/{personId}/loans")
+    @GetMapping("/loans/persons/{personId}")
     public ResponseEntity<List<Loan>> getLoansByPersonId(@PathVariable Long personId) {
         try {
             List<Loan> loans = this.loanService.getLoansByPersonId(personId);

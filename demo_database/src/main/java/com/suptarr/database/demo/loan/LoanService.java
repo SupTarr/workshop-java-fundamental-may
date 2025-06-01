@@ -1,12 +1,10 @@
 package com.suptarr.database.demo.loan;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
+import com.suptarr.database.demo.person.PersonRepository;
 import org.springframework.stereotype.Service;
 
-import com.suptarr.database.demo.person.PersonRepository;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class LoanService {
@@ -28,8 +26,10 @@ public class LoanService {
     }
 
     public List<Loan> getLoansByPersonId(Long personId) {
-        return personRepository.findById(personId)
-                .map(person -> person.getLoans().stream().collect(Collectors.toList()))
-                .orElseThrow(() -> new RuntimeException("Person not found with id: " + personId));
+        if (!this.personRepository.existsById(personId)) {
+            throw new RuntimeException("Person not found with id: " + personId);
+        }
+
+        return this.loanRepository.findByPersonId(personId);
     }
 }
