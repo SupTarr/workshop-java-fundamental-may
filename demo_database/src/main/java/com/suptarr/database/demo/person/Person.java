@@ -23,7 +23,7 @@ public class Person {
 
     private String personId;
     private String name;
-
+    private Integer age;
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonManagedReference

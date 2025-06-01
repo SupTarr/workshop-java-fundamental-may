@@ -1,17 +1,6 @@
-CREATE TABLE IF NOT EXISTS person
-(
-    id
-    SERIAL
-    PRIMARY
-    KEY,
-    person_id
-    VARCHAR
-(
-    50
-) NOT NULL UNIQUE,
-    name VARCHAR
-(
-    255
-) NOT NULL DEFAULT '',
+CREATE TABLE IF NOT EXISTS person (
+    id SERIAL PRIMARY KEY,
+    person_id VARCHAR(50) NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL DEFAULT '',
     age INT NOT NULL DEFAULT 0
-    );
+);
