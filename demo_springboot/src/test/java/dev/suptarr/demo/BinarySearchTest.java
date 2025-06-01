@@ -1,16 +1,14 @@
 package dev.suptarr.demo;
 
+import dev.suptarr.demo.model.BinarySearch;
+import dev.suptarr.demo.model.exception.ValueNotFoundException;
+import org.junit.jupiter.api.Test;
+
 import java.util.Collections;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-
-import org.junit.jupiter.api.Test;
-
-import dev.suptarr.demo.model.BinarySearch;
-import dev.suptarr.demo.model.exception.ValueNotFoundException;
-;
 
 public class BinarySearchTest {
 
