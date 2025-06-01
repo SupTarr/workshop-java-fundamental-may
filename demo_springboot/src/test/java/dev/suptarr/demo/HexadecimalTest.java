@@ -1,6 +1,7 @@
 package dev.suptarr.demo;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
 import dev.suptarr.demo.model.Hexadecimal;

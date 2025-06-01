@@ -6,12 +6,12 @@ public class Auto extends BaseLoan implements Payment {
     }
 
     @Override
-	public double calculateInterest() { 
-		System.out.println("Auto:: calculateInterest() called");
-		return 3.3d;
-	}
+    public double calculateInterest() {
+        System.out.println("Auto:: calculateInterest() called");
+        return 3.3d;
+    }
 
     public String[] paymentOptions() {
-        return new String[] {"Loan"};
+        return new String[]{"Loan"};
     }
 }

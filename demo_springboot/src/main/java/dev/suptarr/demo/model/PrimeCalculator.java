@@ -23,7 +23,7 @@ public class PrimeCalculator {
                 if (p > limit) {
                     break;
                 }
-                
+
                 if (num % p == 0) {
                     isPrime = false;
                     break;

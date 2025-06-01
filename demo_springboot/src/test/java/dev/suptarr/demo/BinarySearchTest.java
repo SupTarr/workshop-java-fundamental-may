@@ -5,6 +5,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+
 import org.junit.jupiter.api.Test;
 
 import dev.suptarr.demo.model.BinarySearch;
@@ -74,8 +75,8 @@ public class BinarySearchTest {
         BinarySearch search = new BinarySearch(sortedList);
 
         assertThatExceptionOfType(ValueNotFoundException.class)
-            .isThrownBy(() -> search.indexOf(7))
-            .withMessage("Value not in array");
+                .isThrownBy(() -> search.indexOf(7))
+                .withMessage("Value not in array");
     }
 
     @Test
@@ -85,8 +86,8 @@ public class BinarySearchTest {
         BinarySearch search = new BinarySearch(sortedList);
 
         assertThatExceptionOfType(ValueNotFoundException.class)
-            .isThrownBy(() -> search.indexOf(0))
-            .withMessage("Value not in array");
+                .isThrownBy(() -> search.indexOf(0))
+                .withMessage("Value not in array");
     }
 
     @Test
@@ -96,8 +97,8 @@ public class BinarySearchTest {
         BinarySearch search = new BinarySearch(sortedList);
 
         assertThatExceptionOfType(ValueNotFoundException.class)
-            .isThrownBy(() -> search.indexOf(13))
-            .withMessage("Value not in array");
+                .isThrownBy(() -> search.indexOf(13))
+                .withMessage("Value not in array");
     }
 
     @Test
@@ -107,8 +108,8 @@ public class BinarySearchTest {
         BinarySearch search = new BinarySearch(emptyList);
 
         assertThatExceptionOfType(ValueNotFoundException.class)
-            .isThrownBy(() -> search.indexOf(1))
-            .withMessage("Value not in array");
+                .isThrownBy(() -> search.indexOf(1))
+                .withMessage("Value not in array");
     }
 
     @Test
@@ -118,8 +119,8 @@ public class BinarySearchTest {
         BinarySearch search = new BinarySearch(sortedList);
 
         assertThatExceptionOfType(ValueNotFoundException.class)
-            .isThrownBy(() -> search.indexOf(0))
-            .withMessage("Value not in array");
+                .isThrownBy(() -> search.indexOf(0))
+                .withMessage("Value not in array");
     }
 
 }

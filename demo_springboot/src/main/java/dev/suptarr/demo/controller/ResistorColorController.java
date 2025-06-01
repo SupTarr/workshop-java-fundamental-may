@@ -11,12 +11,12 @@ public class ResistorColorController {
     ResistorColor resistorColor = new ResistorColor();
 
     @GetMapping("/resistor-colors/")
-	public String[] getColors() {
-		return resistorColor.colors();
-	}
+    public String[] getColors() {
+        return resistorColor.colors();
+    }
 
     @GetMapping("/resistor-colors/{color}")
-	public int getColorCode(@PathVariable("color") String color) {
-		return resistorColor.colorCode(color);
-	}
+    public int getColorCode(@PathVariable("color") String color) {
+        return resistorColor.colorCode(color);
+    }
 }

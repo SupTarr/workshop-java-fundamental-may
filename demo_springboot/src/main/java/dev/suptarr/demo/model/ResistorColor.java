@@ -8,7 +8,7 @@ public class ResistorColor {
 
     public int colorCode(String color) {
         for (int i = 0; i < COLORS.length; i++) {
-            if  (COLORS[i].equals(color)) {
+            if (COLORS[i].equals(color)) {
                 return i;
             }
         }

@@ -58,15 +58,15 @@ public class Loan {
 
     public String toJSON() {
         String format = """
-				{
-					"loanId": "%s",
-					"applicantName": "%s",
-					"loanAmount": %.2f,
-					"loanTerm": %d,
-					"status": "%s",
-					"interestRate": %.2f
-				}
-			""".replaceAll("	", "");
+                	{
+                		"loanId": "%s",
+                		"applicantName": "%s",
+                		"loanAmount": %.2f,
+                		"loanTerm": %d,
+                		"status": "%s",
+                		"interestRate": %.2f
+                	}
+                """.replaceAll("	", "");
         return String.format(format, loanId, applicantName, loanAmount, loanTerm, status, interestRate);
     }
 }

@@ -15,7 +15,7 @@ public class BinarySearch {
         if (numbers == null || numbers.isEmpty()) {
             throw new ValueNotFoundException("Value not in array");
         }
-        
+
         int start = 0;
         int end = numbers.size() - 1;
         while (start <= end) {
@@ -28,7 +28,7 @@ public class BinarySearch {
                 end = middle - 1;
             }
         }
-        
+
         throw new ValueNotFoundException("Value not in array");
     }
 }

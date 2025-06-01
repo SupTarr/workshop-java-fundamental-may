@@ -25,7 +25,7 @@ public class Nurse extends Worker implements Health {
     public void setOtHours(float otHours) {
         this.otHours = otHours;
     }
-    
+
     public double calculateTotalOt() {
         return 15 * otHours;
     }
