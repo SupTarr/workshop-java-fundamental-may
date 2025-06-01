@@ -1,9 +1,14 @@
 CREATE TABLE IF NOT EXISTS loan (
     id SERIAL PRIMARY KEY,
     loan_id VARCHAR(50) NOT NULL UNIQUE,
+    person_id BIGINT NOT NULL,
     applicant_name VARCHAR(255) NOT NULL DEFAULT '',
     loan_amount DECIMAL(15, 2) NOT NULL DEFAULT 0.00,
     loan_term INT NOT NULL DEFAULT 0,
     status VARCHAR(20) NOT NULL DEFAULT 'PENDING',
-    interest_rate DECIMAL(5, 2) NOT NULL DEFAULT 0.00
+    interest_rate DECIMAL(5, 2) NOT NULL DEFAULT 0.00,
+    CONSTRAINT fk_person
+        FOREIGN KEY(person_id)
+        REFERENCES person(id)
+        ON DELETE CASCADE
 );

@@ -18,7 +18,7 @@ public class LoanController {
         this.loanService = loanService;
     }
 
-    @GetMapping("/loans/")
+    @GetMapping("/loans")
     public ResponseEntity<List<Loan>> getLoans() {
         return ResponseEntity.ok(this.loanService.getAllLoans());
     }
@@ -33,7 +33,7 @@ public class LoanController {
     @GetMapping("/persons/{personId}/loans")
     public ResponseEntity<List<Loan>> getLoansByPersonId(@PathVariable Long personId) {
         try {
-            List<Loan> loans = loanService.getLoansByPersonId(personId);
+            List<Loan> loans = this.loanService.getLoansByPersonId(personId);
             return ResponseEntity.ok(loans);
         } catch (RuntimeException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
