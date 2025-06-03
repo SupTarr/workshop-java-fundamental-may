@@ -1,5 +1,6 @@
 package com.suptarr.database.demo.loan;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,13 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequiredArgsConstructor
 public class LoanController {
 
     private final LoanService loanService;
-
-    public LoanController(LoanService loanService) {
-        this.loanService = loanService;
-    }
 
     @GetMapping("/loans")
     public ResponseEntity<List<Loan>> getLoans() {

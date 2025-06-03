@@ -1,21 +1,18 @@
 package com.suptarr.database.demo.loan;
 
 import com.suptarr.database.demo.person.PersonRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class LoanService {
 
     private final LoanRepository loanRepository;
     private final PersonRepository personRepository;
-
-    public LoanService(LoanRepository loanRepository, PersonRepository personRepository) {
-        this.loanRepository = loanRepository;
-        this.personRepository = personRepository;
-    }
 
     public List<Loan> getAllLoans() {
         return this.loanRepository.findAll();
