@@ -29,7 +29,7 @@ public class LoanController {
     }
 
     @GetMapping("/loans/persons/{personId}")
-    public ResponseEntity<List<Loan>> getLoansByPersonId(@PathVariable Long personId) {
+    public ResponseEntity<List<Loan>> getLoansByPersonId(@PathVariable("personId") Long personId) {
         try {
             List<Loan> loans = this.loanService.getLoansByPersonId(personId);
             return ResponseEntity.ok(loans);
